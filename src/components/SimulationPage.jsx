@@ -29,7 +29,7 @@ export default function SimulationPage() {
     const handleMissileChange = (e) => {
         const [country, index] = e.target.value.split("||");
         const missile = missileData[country][index];
-        setSelectedMissile(missile.name);
+        setSelectedMissile(missile);
         setRange(missile.range);
         setCep(missile.cep);
     };
