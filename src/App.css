@@ -1,0 +1,12 @@
+.leaflet-interactive.shockwave-ring {
+  animation: glow 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    stroke-opacity: 0.6;
+  }
+  to {
+    stroke-opacity: 0.1;
+  }
+}

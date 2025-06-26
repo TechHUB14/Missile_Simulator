@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b0b0b;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.simulation-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+  min-height: 100vh;
+  background-color: #0b0b0b;
+  position: relative;
+}
+
+
+
+
+
+
+.simulation-container {
+  width: 90%;
+  max-width: 850px;
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+  color: #ffffff;
+  z-index: 1;
+}
+
+.simulation-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #ff5252;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.input-group label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 16px;
+  color: #cccccc;
+}
+
+.input-group input,
+.input-group select {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  outline: none;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border: 1px solid #ff5252;
+}
+
+.launch-btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff1744;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.launch-btn:hover {
+  background-color: #d50000;
+}
+.launch-btn.launched {
+  background-color: #28a745; /* green after launch */
+}
+
+.leaflet-container {
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+}
+
+img{
+    width: 40vh;
+    height: 136vh;
+}
+.reset-btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #d32f2f;
+}
